@@ -1,0 +1,129 @@
+<div class="content">
+  
+  <!-- start-page -->
+  <div data-role="page" class="start-page" id="start-page" >
+
+      <div class="content" >
+        <div class="text">
+          <img class="mappitlogo" src="/assets/logos/homelogo.png">
+          <p style="">
+            It's the new and growing social media app<br/>
+            where you can see what's happening around<br/>
+            you in real time.
+          </p>
+          <div class="container" >          
+            <div class="col-md-6" >
+              <a href="#"><img class="appstore" src="/assets/logos/appstorelogo.png"></a>
+            </div>
+            <div class="col-md-6" > 
+              <a href="#"><img class="playstore" src="/assets/logos/googleplaylogo.png"></a>
+            </div>            
+          </div>          
+        </div>
+          <img class="iphonehome" src="/assets/homeiphone.png">
+        </div>
+<!--        <div class="support" ></div>-->
+  </div>
+
+
+
+  <!-- section about us -->  
+  <div data-role="page" class="about-us" id="about-us">
+
+    <div class="content">
+      <img class="iphone21" src="/assets/2iphone1.png">
+      <img class="iphone2" src="/assets/2iphone.png">
+      <img class="photo1" src="/assets/photo1.png">
+      <img class="photo2" src="/assets/photo2.png">
+      <img class="photo3" src="/assets/photo3.png">
+      <img class="photo4" src="/assets/photo4.png">
+    </div>
+    <div class="copycontainer" >
+      <p>
+        Share your pictures and show your followers<br/>
+        and friends where the fun is
+      </p>
+    </div>
+  
+  </div>
+  
+  <div class="clear"></div>  
+
+
+  <!-- partners-->
+
+  <div data-role="page" class="partners" id="partners">    
+    <div id="carousel-example-generic" class="ui-contenr carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+     
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/assets/slide1.png" alt="...">          
+        </div>
+        <div class="item">
+          <img src="/assets/slide2.png" alt="...">          
+        </div>        
+      </div>     
+    </div> <!-- Carousel -->
+  </div>
+
+
+
+  <!-- portoflio-->
+
+    <div data-role="page" class="portfolio" id="portfolio">
+      <div class="content">
+        <div class="col-md-3"></div>
+        <div class="icons col-md-6" >
+          <img class="followicon" src="/assets/followicon.png">
+          <img class="likeicon" src="/assets/likeicon.png">
+          <img class="commenticon" src="/assets/commenticon.png">
+          <img class="reposticon" src="/assets/reposticon.png">
+        </div>    
+        <div class="col-md-3"></div>
+      </div>
+      <img class="iphone3" src="/assets/3iphone.png">
+      <img class="message3" src="/assets/3message.png">         
+    </div>
+
+  
+   <div class="clear"></div>  
+
+  
+  <!-- contact--> 
+
+  <div data-role="page" class="contact" id="contact">      
+
+      <img class="fullmappitlogo" src="/assets/logos/fullmappitlogo.png">         
+
+      <h2>Got a sugestion for us? Write it down!</h2>          
+      <div class="content">     
+        <div class="form" id="formulario">         
+          <%= flash[:notice] %> 
+          <%= form_for(@fullpage, url: message_path) do |f| %>            
+            <%= render 'shared/error_messages' %>
+            <%= f.email_field :email, placeholder: "E-mail Address", :class => 'form-control' %>
+            <%= f.text_area :comment, placeholder: "Comment", :class => 'form-control' %>
+            <%= f.submit "Send", class: "button btn btn-default" %>             
+          <% end %>
+        </div>      
+      </div>
+      <div class="formimage">
+        <img class="image" src="/assets/formimage.png">        
+      </div>
+  </div> 
+
+
+<!--
+  <button>
+    <%= link_to "contact", messages_new_path%>
+  </button>
+-->
+
+
+</div>

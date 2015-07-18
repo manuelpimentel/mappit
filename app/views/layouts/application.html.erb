@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mappit! - the living map.</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="/assets/jquery-2.1.4.min.js"></script> 
+<script src="/assets/jquery.jscroll.min.js"></script> 
+<script src="/assets/jquery-ui-sliderAccess.js"></script> 
+<script src="/assets/jquery.nicescroll.js"></script>
+<script src="/assets/jquery.ui.min.js"></script> 
+<script src="/assets/jquery.parallax.js"></script>
+<script src="/assets/aboutjquery.js"></script>     
+<link rel="icon" type="image/png" href="/assets/mappitfavicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+<%= yield %>
+
+<div class="buttonscontainer">	
+	<a data-transition="slide" class="homebutton" href="#start-page"><img class="homebutton" id="homebutton" src="/assets/activebutton.png" ></a>
+	<a data-transition="turn" class="page2button" href="#about-us"><img class="page2button" id="page2button"  src="/assets/notactivebutton.png"></a>
+	<a data-transition="none" class="page3button" href="#partners"><img class="page3button" id="page3button"  src="/assets/notactivebutton.png"></a>
+	<a data-transition="fade" class="page4button" href="#portfolio"><img class="page4button" id="page4button"  src="/assets/notactivebutton.png"></a>
+	<a data-transition="slide" class="messagesbutton" href="#contact"><img class="messagesbutton" id="messagesbutton"  src="/assets/notactivebutton.png"></a>
+</div>
+
+
+
+<!--
+<div class="buttonscontainer">	
+	<%= link_to image_tag("activebutton.png", :class => "homebutton"), home_path, :class => "home", "data-transition" => "slide" %><br/>
+  <%= link_to image_tag("notactivebutton.png", :class => "page2button"), page2_path, :class => "page2", "data-transition" => "slide" %><br/>
+	<%= link_to image_tag("notactivebutton.png", :class => "page3button"), page3_path, :class => "page3", "data-transition" => "slide" %><br/>
+	<%= link_to image_tag("notactivebutton.png", :class => "page4button"), page4_path, :class => "page4", "data-transition" => "slide" %><br/>
+	<%= link_to image_tag("notactivebutton.png", :class => "messagesbutton"), message_path, :class => "contact", "data-transition" => "slide" %>
+</div>
+-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<section class="contact" id="contact">    
+    <img class="fullmappitlogo" src="/assets/logos/fullmappitlogo.png">         
+    <h2>Got a sugestion for us? Write it down!</h2>    
+    <div class="content">     
+       	<div class="form" id="formulario">        		
+		    <%= form_for(@message) do |f| %>		      
+            <%= f.email_field :email, placeholder: "E-mail Address", :class => 'form-control' %>
+            <%= f.text_area :comment, placeholder: "Comment", :class => 'form-control' %>
+		      <%= f.submit "send", class: "button btn btn-primary" %>
+		    <% end %>
+    	</div>
+	</div>
+    <div class="formimage">
+	    <img class="image" src="/assets/formimage.png">        
+	</div>
+</section>
