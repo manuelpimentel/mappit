@@ -54,6 +54,7 @@ end
 
 group :production do
 	gem 'pg'
+	gem 'rake', '~> 10.4.2'
 	gem 'rails_12factor'
 end
 
