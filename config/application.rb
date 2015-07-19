@@ -8,10 +8,14 @@ Bundler.require(*Rails.groups)
 
 module Mappit2
   class Application < Rails::Application
+
 <<<<<<< HEAD
     config.assets.initialize_on_precompile = false
 =======
 >>>>>>> 41c770150b21ee4e39450e310c973d309e644d23
+=======
+    config.assets.initialize_on_precompile = false
+>>>>>>> change config/aplication
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
