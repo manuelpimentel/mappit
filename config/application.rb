@@ -8,8 +8,6 @@ Bundler.require(*Rails.groups)
 
 module Mappit2
   class Application < Rails::Application
-
-    config.assets.initialize_on_precompile = false
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -24,5 +22,9 @@ module Mappit2
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-  end 
+<<<<<<< HEAD
+    config.assets.initialize_on_precompile = false
+=======
+>>>>>>> 41c770150b21ee4e39450e310c973d309e644d23
+  end
 end
