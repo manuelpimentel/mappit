@@ -23,9 +23,8 @@ module Mappit2
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-<<<<<<< HEAD
+
     config.assets.initialize_on_precompile = false
-=======
->>>>>>> 41c770150b21ee4e39450e310c973d309e644d23
+
   end
 end
