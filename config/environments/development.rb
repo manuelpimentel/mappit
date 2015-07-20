@@ -18,11 +18,11 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address  => ENV["ADDRESS"];
-    :port   => ENV["PORT"];
-    :domain   => ENV["DOMAIN"]; 
-    :user_name  => ENV["MAIL_USERNAME"]; 
-    :password   => ENV["MAIL_PASS"];
+    :address  => ENV["ADDRESS"],
+    :port   => ENV["PORT"],
+    :domain   => ENV["DOMAIN"], 
+    :user_name  => ENV["MAIL_USERNAME"], 
+    :password   => ENV["MAIL_PASS"],
     :authentication => "plain",
     :enable_starttls_auto => true
   }
