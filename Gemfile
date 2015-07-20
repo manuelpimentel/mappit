@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'jquery_mobile_rails', '~> 1.4.5'
 #jquery-sass
 gem 'jquery-ui-sass-rails', '~> 4.0.3.0'
-
+gem 'figaro', '~> 1.1.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -53,8 +53,7 @@ group :development, :test do
 end
 
 group :production do
-	gem 'pg'
-	gem 'rake', '~> 10.4.2'
+	gem 'pg'	
 	gem 'rails_12factor'
 end
 

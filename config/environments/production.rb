@@ -18,13 +18,14 @@ config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address  => "smtp.mandrillapp.com",
-    :port   => 587,
-    :domain   => "gmail.com",
-    :user_name  => "manuelpimentel16@gmail.com",
-    :password   => "yRbwaMLRtHpKpS7KGsBuuQ",
+    :address  => ENV["ADDRESS"];
+    :port   => ENV["PORT"];
+    :domain   => ENV["DOMAIN"]; 
+    :user_name  => ENV["MAIL_USERNAME"]; 
+    :password   => ENV["MAIL_PASS"];
     :authentication => "plain",
     :enable_starttls_auto => true
+  }
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like

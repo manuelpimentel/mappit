@@ -21,3 +21,6 @@ public/uploads
 tmp
 logs
 >>>>>>> 41c770150b21ee4e39450e310c973d309e644d23
+
+# Ignore application configuration
+/config/application.yml
