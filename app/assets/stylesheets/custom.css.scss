@@ -100,7 +100,7 @@ h1 span{
  /*Start page */
 
 .start-page {  
-  background:url(<%= asset_path '/images/background/homebackground.png' %>);
+  background:url(<%= image_tag "/background/homebackground.png" %>);
   background-size: 100% 100%;
   width:100%;
   height:580px;
