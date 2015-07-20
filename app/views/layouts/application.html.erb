@@ -27,13 +27,12 @@
 <%= yield %>
 
 <div class="buttonscontainer">	
-	<a data-transition="fade" class="homebutton" href="#start-page"><img class="homebutton" id="homebutton" src="/assets/activebutton.png" ></a>
-	<a data-transition="fade" class="page2button" href="#about-us"><img class="page2button" id="page2button"  src="/assets/notactivebutton.png"></a>
-	<a data-transition="fade" class="page3button" href="#partners"><img class="page3button" id="page3button"  src="/assets/notactivebutton.png"></a>
-	<a data-transition="fade" class="page4button" href="#portfolio"><img class="page4button" id="page4button"  src="/assets/notactivebutton.png"></a>
-	<a data-transition="fade" class="messagesbutton" href="#contact"><img class="messagesbutton" id="messagesbutton"  src="/assets/notactivebutton.png"></a>
+	<a data-transition="fade" class="homebutton" href="#start-page"><%= image_tag('activebutton.png', :class => "homebutton", :id => "homebutton")  %></a>
+	<a data-transition="fade" class="page2button" href="#about-us"><%= image_tag('notactivebutton.png', :class => "page2button", :id => "page2button") %></a>
+	<a data-transition="fade" class="page3button" href="#partners"><%= image_tag('notactivebutton.png', :class => "page3button", :id => "page3button") %></a>
+	<a data-transition="fade" class="page4button" href="#portfolio"><%= image_tag('notactivebutton.png', :class => "page4button", :id => "page4button") %></a>
+	<a data-transition="fade" class="messagesbutton" href="#contact"><%= image_tag('notactivebutton.png', :class => "messagesbutton", :id => "messagesbutton") %></a>
 </div>
-
 
 
 <!--
