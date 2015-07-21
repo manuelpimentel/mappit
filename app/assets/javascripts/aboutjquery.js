@@ -1,4 +1,5 @@
 $(function() {		
+    
     $(".homebutton").click(function(){
         $("#homebutton").attr("src", "/assets/activebutton.png");    
         $("#page2button").attr("src", "/assets/notactivebutton.png");
@@ -39,9 +40,22 @@ $(function() {
         $("#messagesbutton").attr("src", "/assets/activebutton.png");
     });
 
+    var scrollInProgress = false;
+    $(document).on('keydown', function(e){stateKeyController(e)});
+            function stateKeyController (e) {
+                var $keyMapDown = {32: true, 34: true, 35: true, 40: true} // 32 space, 34 pgdown, 35 end, 40 arrowDown
+                var $keyMapUp = {33: true, 36: true, 38: true} // 33 pgup, 36 home, 38 arrowUp            
+                if (!scrollInProgress) 
+                {
+                    var current = getCurrent();
+                    if (e.which in $keyMapDown) {
+                        activateSection(current.next(_.child));
+                    } else if (e.which in $keyMapUp) {
+                        activateSection(current.prev(_.child));
+                    }
+                }
+            };
 });
-
-
 
 
 
