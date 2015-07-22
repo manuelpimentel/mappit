@@ -40,6 +40,8 @@ $(function() {
         $("#messagesbutton").attr("src", "/assets/activebutton.png");
     });
 
+});
+
 /*
     var scrollInProgress = false;
     $(document).on('keydown', function(e){stateKeyController(e)});
