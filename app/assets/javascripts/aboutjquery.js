@@ -1,43 +1,43 @@
 $(function() {		
     
     $(".homebutton").click(function(){
-        $("#homebutton").attr("src", <%= asset_path('activebutton.png') %>);    
-        $("#page2button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#page3button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#page4button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#messagesbutton").attr("src", <%= asset_path('notactivebutton.png') %>);
+        $("#homebutton").attr("src", "<%= asset_path('activebutton.png') %>");    
+        $("#page2button").attr("src", "<%= asset_path('notactivebutton.png') %>");
+        $("#page3button").attr("src", "<%= asset_path('notactivebutton.png') %>");
+        $("#page4button").attr("src", "<%= asset_path('notactivebutton.png') %>");
+        $("#messagesbutton").attr("src", "<%= asset_path('notactivebutton.png') %>");
     });    
 
     $(".page2button").click(function(){
-        $("#homebutton").attr("src", <%= asset_path('notactivebutton.png') %>);    
-        $("#page2button").attr("src", <%= asset_path('activebutton.png') %>);
-        $("#page3button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#page4button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#messagesbutton").attr("src", <%= asset_path('notactivebutton.png') %>);
+        $("#homebutton").attr("src", "<%= asset_path('notactivebutton.png') %>");    
+        $("#page2button").attr("src", "<%= asset_path('activebutton.png') %>");
+        $("#page3button").attr("src", "<%= asset_path('notactivebutton.png') %>");
+        $("#page4button").attr("src", "<%= asset_path('notactivebutton.png') %>");
+        $("#messagesbutton").attr("src"," <%= asset_path('notactivebutton.png') %>");
     });
 
     $(".page3button").click(function(){
-        $("#homebutton").attr("src", <%= asset_path('notactivebutton.png') %>);    
-        $("#page2button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#page3button").attr("src", <%= asset_path('activebutton.png') %>);
-        $("#page4button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#messagesbutton").attr("src", <%= asset_path('notactivebutton.png') %>);
+        $("#homebutton").attr("src", "<%= asset_path('notactivebutton.png') %>");    
+        $("#page2button").attr("src", "<%= asset_path('notactivebutton.png') %>");
+        $("#page3button").attr("src", "<%= asset_path('activebutton.png') %>");
+        $("#page4button").attr("src", "<%= asset_path('notactivebutton.png') %>");
+        $("#messagesbutton").attr("src", "<%= asset_path('notactivebutton.png') %>");
     });
 
     $(".page4button").click(function(){
-        $("#homebutton").attr("src", <%= asset_path('notactivebutton.png') %>);    
-        $("#page2button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#page3button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#page4button").attr("src", <%= asset_path('activebutton.png') %>);
-        $("#messagesbutton").attr("src", <%= asset_path('notactivebutton.png') %>);
+        $("#homebutton").attr("src", "<%= asset_path('notactivebutton.png') %>");    
+        $("#page2button").attr("src", "<%= asset_path('notactivebutton.png') %>");
+        $("#page3button").attr("src"," <%= asset_path('notactivebutton.png') %>");
+        $("#page4button").attr("src", "<%= asset_path('activebutton.png') %>");
+        $("#messagesbutton").attr("src"," <%= asset_path('notactivebutton.png') %>");
     });
 
     $(".messagesbutton").click(function(){
-        $("#homebutton").attr("src", <%= asset_path('notactivebutton.png') %>);    
-        $("#page2button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#page3button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#page4button").attr("src", <%= asset_path('notactivebutton.png') %>);
-        $("#messagesbutton").attr("src", <%= asset_path('activebutton.png') %>);
+        $("#homebutton").attr("src"," <%= asset_path('notactivebutton.png') %>");    
+        $("#page2button").attr("src", "<%= asset_path('notactivebutton.png') %>");
+        $("#page3button").attr("src", "<%= asset_path('notactivebutton.png') %>");
+        $("#page4button").attr("src", "<%= asset_path('notactivebutton.png') %>");
+        $("#messagesbutton").attr("src", "<%= asset_path('activebutton.png') %>");
     });
 
     var scrollInProgress = false;
