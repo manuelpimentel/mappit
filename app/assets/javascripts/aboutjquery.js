@@ -44,7 +44,7 @@ $(function() {
     $(document).on('keydown', function(e){stateKeyController(e)});
             function stateKeyController (e) {
                 var $keyMapDown = {32: true, 34: true, 35: true, 40: true} // 32 space, 34 pgdown, 35 end, 40 arrowDown
-                var $keyMapUp = {33: true, 36: true, 38: true} // 33 pgup, 36 home, 38 arrowUp            
+                var $keyMapUp = {33: true, 36: true, 38: true} // 33 pgup, 36 home,| 38 arrowUp            
                 if (!scrollInProgress) 
                 {
                     var current = getCurrent();
@@ -56,7 +56,6 @@ $(function() {
                 }
             };
 });
-
 
 
 /*    $(".start-page").hide().fadeIn(500);
