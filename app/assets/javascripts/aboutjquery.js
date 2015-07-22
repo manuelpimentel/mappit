@@ -40,6 +40,7 @@ $(function() {
         $("#messagesbutton").attr("src", "/assets/activebutton.png");
     });
 
+/*
     var scrollInProgress = false;
     $(document).on('keydown', function(e){stateKeyController(e)});
             function stateKeyController (e) {
@@ -58,7 +59,7 @@ $(function() {
 });
 
 
-/*    $(".start-page").hide().fadeIn(500);
+    $(".start-page").hide().fadeIn(500);
     $(".about-us").hide().delay(1000).fadeIn(400);
     $(".partners").hide().fadeIn(1000);    
     $(".contact").hide().fadeIn(1000);
