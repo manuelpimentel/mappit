@@ -2,27 +2,28 @@
   
   <!-- start-page -->
   <div data-role="page" class="start-page" id="start-page" >
+    <div class="content" >
+      <div class="text">
+        <%= image_tag('homelogo.png', :class => "mappitlogo")  %>
+        <p>
+          It's the new and growing social media app<br/>
+          where you can see what's happening around<br/>
+          you in real time.
+        </p>
+        <div class="container" >
 
-      <div class="content" >
-        <div class="text">
-          <%= image_tag('homelogo.png', :class => "mappitlogo")  %>
-          <p>
-            It's the new and growing social media app<br/>
-            where you can see what's happening around<br/>
-            you in real time.
-          </p>
-          <div class="container" >          
-            <div class="col-md-6" >
-              <a href="#"><%= image_tag('appstorelogo.png', :class => "appstore")  %></a>
-            </div>
-            <div class="col-md-6" > 
-              <a href="#"><%= image_tag('googleplaylogo.png', :class => "playstore")  %></a>
-            </div>            
-          </div>          
-        </div>
-          <%= image_tag('homeiphone.png', :class => "iphonehome")  %>
+          <div class="col-md-6" >
+            <a href="#"><%= image_tag('appstorelogo.png', :class => "appstore")  %></a>
+          </div>
+
+          <div class="col-md-6" > 
+            <a href="#"><%= image_tag('googleplaylogo.png', :class => "playstore")  %></a>
+          </div>            
+
+        </div>          
       </div>
-<!--        <div class="support" ></div>-->
+        <%= image_tag('homeiphone.png', :class => "iphonehome")  %>
+    </div>
   </div>
 
 
@@ -50,17 +51,16 @@
   <div class="clear"></div>  
 
 
-  <!-- partners-->
+  <!-- partners
 
-  <div data-role="page" class="partners" id="partners">    
+  <div data-role="page" class="partners" id="partners">
     <div id="carousel-example-generic" class="ui-contenr carousel slide" data-ride="carousel">
-      <!-- Indicators -->
+      
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      </ol>
-     
-      <!-- Wrapper for slides -->
+      </ol>   
+       
       <div class="carousel-inner">
         <div class="item active">
           <%= image_tag('slide1.png')  %>
@@ -69,7 +69,20 @@
           <%= image_tag('slide2.png')  %>
         </div>        
       </div>     
-    </div> <!-- Carousel -->
+    </div>  
+  </div>-->
+
+
+  <div data-role="page" class="partners" id="partners">
+    <%= image_tag('slide1.png')  %>    
+  </div>
+
+
+
+
+  <div data-role="page" class="partners" id="partners">
+    <%= image_tag('slide2.png')  %>
+    
   </div>
 
 
