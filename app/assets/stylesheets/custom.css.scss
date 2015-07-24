@@ -110,9 +110,7 @@ h1 span{
   width:900px;
   margin:0 auto;
   height:580px;
-
-
-  }
+}
 
 .start-page .content .text .mappitlogo{
   position: relative;
@@ -148,38 +146,36 @@ h1 span{
 }
 
 
-  .start-page .content .text .container{
-    position: relative;
-    bottom: 130px;
-    -webkit-animation: fromtop 1.5s;
+.start-page .content .text .container{
+  position: relative;
+  bottom: 130px;
+  -webkit-animation: fromtop 1.5s;
+}
 
-  }
+.start-page .content .appstore:hover{
+  transform: scale(1.1);
+}
 
-  .start-page .content .appstore:hover{
-    transform: scale(1.1);
-  }
+.start-page .content .appstore{
+  transition: all 0.3s ease 0s;
+  -webkit-animation: fromtop 2.5s;
+  height: 40px;
+  width: 150px;
+  bottom: -400px;
+}
 
-  .start-page .content .appstore{
-    transition: all 0.3s ease 0s;
-    -webkit-animation: fromtop 2.5s;
-    height: 40px;
-    width: 150px;
-    bottom: -400px;
-  }
+.start-page .content .playstore:hover{
+  transform: scale(1.1);
+}
 
-  .start-page .content .playstore:hover{
-    transform: scale(1.1);
-  }
-
-  .start-page .content .playstore{
-    height: 40px;
-    width: 150px;
-    transition: all 0.3s ease 0s;
-    -webkit-animation: fromtop 2.5s;
-    bottom: -400px;
-    right:100px;
-
-  }
+.start-page .content .playstore{
+  height: 40px;
+  width: 150px;
+  transition: all 0.3s ease 0s;
+  -webkit-animation: fromtop 2.5s;
+  bottom: -400px;
+  right:100px;
+}
 
 .start-page .content .iphonehome{
   position: relative;
