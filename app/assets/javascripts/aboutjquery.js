@@ -57,10 +57,10 @@ $(function() {
     var c = 0;
     $(document).on('keydown', function(event){        
         
-        if ((event.keyCode == 40) && (c < 5)){
+        if (((event.keyCode == 40) || (event.keyCode == 34) || (event.keyCode == 32)) && (c < 5)){
             c = c + 1;
             alert("apretaste flecha pa abajo " + c + " veces");
-        } else if ((event.keyCode == 38) && (c > 0)) {
+        } else if (((event.keyCode == 38) || (event.keyCode == 33)) && (c > 0)) {
             c = c - 1;
             alert("apretaste flecha pa arriba " + c + " veces");
         }
@@ -72,13 +72,16 @@ $(function() {
             $("#page4button").attr("src", "/assets/notactivebutton.png");
             $("#page5button").attr("src", "/assets/notactivebutton.png");
             $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
+            $(document).load("#start-page");
+
         } else if (c == 1) {
             $("#homebutton").attr("src", "/assets/notactivebutton.png");    
             $("#page2button").attr("src", "/assets/activebutton.png");
             $("#page3button").attr("src", "/assets/notactivebutton.png");
             $("#page4button").attr("src", "/assets/notactivebutton.png");
             $("#page5button").attr("src", "/assets/notactivebutton.png");
-            $("#messagesbutton").attr("src", "/assets/notactivebutton.png");            
+            $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
+            $(document).load("#about-us");            
         } else if (c == 2) {
             $("#homebutton").attr("src", "/assets/notactivebutton.png");    
             $("#page2button").attr("src", "/assets/notactivebutton.png");
@@ -86,6 +89,7 @@ $(function() {
             $("#page4button").attr("src", "/assets/notactivebutton.png");
             $("#page5button").attr("src", "/assets/notactivebutton.png");
             $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
+            $(document).load("#partners");
         }else if (c == 3) {
             $("#homebutton").attr("src", "/assets/notactivebutton.png");    
             $("#page2button").attr("src", "/assets/notactivebutton.png");
@@ -93,6 +97,7 @@ $(function() {
             $("#page4button").attr("src", "/assets/activebutton.png");
             $("#page5button").attr("src", "/assets/notactivebutton.png");
             $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
+            $(document).load("#partners2");
         }else if (c == 4) {
             $("#homebutton").attr("src", "/assets/notactivebutton.png");    
             $("#page2button").attr("src", "/assets/notactivebutton.png");
@@ -100,6 +105,7 @@ $(function() {
             $("#page4button").attr("src", "/assets/notactivebutton.png");
             $("#page5button").attr("src", "/assets/activebutton.png");
             $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
+            $(document).load("#portfolio");
         }else if (c == 5) {
             $("#homebutton").attr("src", "/assets/notactivebutton.png");    
             $("#page2button").attr("src", "/assets/notactivebutton.png");
@@ -107,6 +113,7 @@ $(function() {
             $("#page4button").attr("src", "/assets/notactivebutton.png");
             $("#page5button").attr("src", "/assets/notactivebutton.png");
             $("#messagesbutton").attr("src", "/assets/activebutton.png");
+            $(document).load("#contact");
         }
 
       
