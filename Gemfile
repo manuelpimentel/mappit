@@ -28,6 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'jquery_mobile_rails', '~> 1.4.5'
 #jquery-sass
 gem 'jquery-ui-sass-rails', '~> 4.0.3.0'
+
 gem 'figaro', '~> 1.1.1'
 
 # Use ActiveModel has_secure_password

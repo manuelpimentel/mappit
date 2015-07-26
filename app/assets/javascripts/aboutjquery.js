@@ -5,6 +5,7 @@ $(function() {
         $("#page2button").attr("src", "/assets/notactivebutton.png");
         $("#page3button").attr("src", "/assets/notactivebutton.png");
         $("#page4button").attr("src", "/assets/notactivebutton.png");
+        $("#page5button").attr("src", "/assets/notactivebutton.png");
         $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
     });    
 
@@ -13,6 +14,7 @@ $(function() {
         $("#page2button").attr("src", "/assets/activebutton.png");
         $("#page3button").attr("src", "/assets/notactivebutton.png");
         $("#page4button").attr("src", "/assets/notactivebutton.png");
+        $("#page5button").attr("src", "/assets/notactivebutton.png");
         $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
     });
 
@@ -21,6 +23,7 @@ $(function() {
         $("#page2button").attr("src", "/assets/notactivebutton.png");
         $("#page3button").attr("src", "/assets/activebutton.png");
         $("#page4button").attr("src", "/assets/notactivebutton.png");
+        $("#page5button").attr("src", "/assets/notactivebutton.png");
         $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
     });
 
@@ -29,18 +32,95 @@ $(function() {
         $("#page2button").attr("src", "/assets/notactivebutton.png");
         $("#page3button").attr("src", "/assets/notactivebutton.png");
         $("#page4button").attr("src", "/assets/activebutton.png");
+        $("#page5button").attr("src", "/assets/notactivebutton.png");
         $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
     });
+
+    $(".page5button").click(function(){
+        $("#homebutton").attr("src", "/assets/notactivebutton.png");    
+        $("#page2button").attr("src", "/assets/notactivebutton.png");
+        $("#page3button").attr("src", "/assets/notactivebutton.png");
+        $("#page4button").attr("src", "/assets/notactivebutton.png");
+        $("#page5button").attr("src", "/assets/activebutton.png");
+        $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
+    });    
 
     $(".messagesbutton").click(function(){
         $("#homebutton").attr("src", "/assets/notactivebutton.png");    
         $("#page2button").attr("src", "/assets/notactivebutton.png");
         $("#page3button").attr("src", "/assets/notactivebutton.png");
         $("#page4button").attr("src", "/assets/notactivebutton.png");
+        $("#page5button").attr("src", "/assets/notactivebutton.png");
         $("#messagesbutton").attr("src", "/assets/activebutton.png");
     });
 
+    var c = 0;
+    $(document).on('keydown', function(event){        
+        
+        if ((event.keyCode == 40) && (c < 5)){
+            c = c + 1;
+            alert("apretaste flecha pa abajo " + c + " veces");
+        } else if ((event.keyCode == 38) && (c > 0)) {
+            c = c - 1;
+            alert("apretaste flecha pa arriba " + c + " veces");
+        }
+    
+        if (c == 0){            
+            $("#homebutton").attr("src", "/assets/activebutton.png");    
+            $("#page2button").attr("src", "/assets/notactivebutton.png");
+            $("#page3button").attr("src", "/assets/notactivebutton.png");
+            $("#page4button").attr("src", "/assets/notactivebutton.png");
+            $("#page5button").attr("src", "/assets/notactivebutton.png");
+            $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
+        } else if (c == 1) {
+            $("#homebutton").attr("src", "/assets/notactivebutton.png");    
+            $("#page2button").attr("src", "/assets/activebutton.png");
+            $("#page3button").attr("src", "/assets/notactivebutton.png");
+            $("#page4button").attr("src", "/assets/notactivebutton.png");
+            $("#page5button").attr("src", "/assets/notactivebutton.png");
+            $("#messagesbutton").attr("src", "/assets/notactivebutton.png");            
+        } else if (c == 2) {
+            $("#homebutton").attr("src", "/assets/notactivebutton.png");    
+            $("#page2button").attr("src", "/assets/notactivebutton.png");
+            $("#page3button").attr("src", "/assets/activebutton.png");
+            $("#page4button").attr("src", "/assets/notactivebutton.png");
+            $("#page5button").attr("src", "/assets/notactivebutton.png");
+            $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
+        }else if (c == 3) {
+            $("#homebutton").attr("src", "/assets/notactivebutton.png");    
+            $("#page2button").attr("src", "/assets/notactivebutton.png");
+            $("#page3button").attr("src", "/assets/notactivebutton.png");
+            $("#page4button").attr("src", "/assets/activebutton.png");
+            $("#page5button").attr("src", "/assets/notactivebutton.png");
+            $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
+        }else if (c == 4) {
+            $("#homebutton").attr("src", "/assets/notactivebutton.png");    
+            $("#page2button").attr("src", "/assets/notactivebutton.png");
+            $("#page3button").attr("src", "/assets/notactivebutton.png");
+            $("#page4button").attr("src", "/assets/notactivebutton.png");
+            $("#page5button").attr("src", "/assets/activebutton.png");
+            $("#messagesbutton").attr("src", "/assets/notactivebutton.png");
+        }else if (c == 5) {
+            $("#homebutton").attr("src", "/assets/notactivebutton.png");    
+            $("#page2button").attr("src", "/assets/notactivebutton.png");
+            $("#page3button").attr("src", "/assets/notactivebutton.png");
+            $("#page4button").attr("src", "/assets/notactivebutton.png");
+            $("#page5button").attr("src", "/assets/notactivebutton.png");
+            $("#messagesbutton").attr("src", "/assets/activebutton.png");
+        }
+
+      
+
+    
+    });
+    
+
+
+
 });
+
+
+
 
 /*
     var scrollInProgress = false;
